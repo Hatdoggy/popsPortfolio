@@ -1,0 +1,25 @@
+<svg width="616" height="467" viewBox="0 0 616 467" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ighting">
+<g id="L1">
+<ellipse id="L1Bulb" cx="57.5" cy="379.5" rx="21.5" ry="36" transform="rotate(-90 57.5 379.5)" fill="#FFD465"/>
+<rect id="Rectangle 3" x="52" y="37" width="11" height="324" fill="#5A5A5A"/>
+<path id="Vector 1" d="M0 379C17.6667 358.667 65.2 330.2 114 379H0Z" fill="#484848"/>
+</g>
+<g id="L3">
+<ellipse id="L3Bulb" cx="392.5" cy="382.5" rx="21.5" ry="36" transform="rotate(-90 392.5 382.5)" fill="#FFD465"/>
+<rect id="Rectangle 3_2" x="387" y="37" width="11" height="324" fill="#5A5A5A"/>
+<path id="Vector 1_2" d="M335 379C352.667 358.667 400.2 330.2 449 379H335Z" fill="#484848"/>
+</g>
+<g id="L2">
+<ellipse id="L2Bulb" cx="224.5" cy="445.5" rx="21.5" ry="42.4545" transform="rotate(-90 224.5 445.5)" fill="#FFD465"/>
+<rect id="Rectangle 3_3" x="219" y="37" width="11" height="382.091" fill="#5A5A5A"/>
+<path id="Vector 1_3" d="M167 440.318C184.667 416.339 232.2 382.769 281 440.318H167Z" fill="#484848"/>
+</g>
+<g id="L4">
+<ellipse id="L4Bulb" cx="559.5" cy="440.5" rx="21.5" ry="42.4545" transform="rotate(-90 559.5 440.5)" fill="#FFD465"/>
+<rect id="Rectangle 3_4" x="554" y="37" width="11" height="382.091" fill="#5A5A5A"/>
+<path id="Vector 1_4" d="M502 440.318C519.667 416.339 567.2 382.769 616 440.318H502Z" fill="#484848"/>
+</g>
+<rect id="Lbar" width="616" height="37" fill="#959595"/>
+</g>
+</svg>

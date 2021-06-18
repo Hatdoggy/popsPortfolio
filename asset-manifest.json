@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/popsPortfolio/static/js/main.c0c80950.chunk.js",
+    "main.js.map": "/popsPortfolio/static/js/main.c0c80950.chunk.js.map",
+    "runtime-main.js": "/popsPortfolio/static/js/runtime-main.23bc05ba.js",
+    "runtime-main.js.map": "/popsPortfolio/static/js/runtime-main.23bc05ba.js.map",
+    "static/js/2.286eb97c.chunk.js": "/popsPortfolio/static/js/2.286eb97c.chunk.js",
+    "static/js/2.286eb97c.chunk.js.map": "/popsPortfolio/static/js/2.286eb97c.chunk.js.map",
+    "index.html": "/popsPortfolio/index.html",
+    "static/js/2.286eb97c.chunk.js.LICENSE.txt": "/popsPortfolio/static/js/2.286eb97c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23bc05ba.js",
+    "static/js/2.286eb97c.chunk.js",
+    "static/js/main.c0c80950.chunk.js"
+  ]
+}
