@@ -63,7 +63,7 @@ const desData = [
 		alt:'des7',
 	},
 	{
-		src:'./images/img8.jpg',
+		src:'./images/img8.JPG',
 		alt:'des8',
 	},
 ]
