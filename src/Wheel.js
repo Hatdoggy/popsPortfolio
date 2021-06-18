@@ -128,7 +128,7 @@ const Wheel = ()=>{
 	return(
 		contents.map((elem,ndx)=>(
 			<div key={ndx} className="dispImg over-hide mr-5">
-				<img src={elem.src} alt={elem.alt} className="fit"/>				
+				<img loading="lazy" src={elem.src} alt={elem.alt} className="fit"/>				
 			</div>
 		))
 	);
@@ -162,13 +162,13 @@ export const Grid = (props)=>{
 			{props.view.img?
 				desData.map((elem,ndx)=>(
 					<div className={`${mobile?"mt-2":"fit"} cont hov`} key={ndx} >
-						<img src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit hov"/>
+						<img loading="lazy" src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit hov"/>
 					</div>
 				))
 				:
 				sktData.map((elem,ndx)=>(
 					<div className={`${mobile?"mt-2":"fit"} cont hov`} key={ndx} >
-						<img src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit"/>
+						<img loading="lazy" src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit"/>
 					</div>
 				))
 			}
@@ -189,7 +189,7 @@ export const Modal = (props)=>{
 	return(
 		<div className="h-100 w-100 flex jc-ce al-ce modal-cont pos-fix" onClick={()=>close()}>
 			<div className="modal">
-				<img src={props.modal.src} className="fit" alt={props.modal.alt}/>
+				<img loading="lazy" src={props.modal.src} className="fit" alt={props.modal.alt}/>
 			</div>
 		</div>
 	);

@@ -60,7 +60,7 @@ all: unset;
 }
 
 .main{
-	background-image: url('/images/LightBG.jpg');
+	background-image: url('../images/LightBG.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
