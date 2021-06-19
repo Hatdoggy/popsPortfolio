@@ -143,7 +143,7 @@ const Greet = (props)=>{
       {check&&//Contact Display
         <div className="mt-5 flex jc-ar  flx-col al-ce jc-ce w-100 trans h-30">
           <h3 className="lato bold txt-r fadeInRight trans">Contact Me</h3>
-          <p className="lato w-30 lato txt-ce mt-2 fadeInRight trans">I am a Lorem ipsum, dolor sit amet consectetur adipisicing elit.Molestiae quaerat cumque reprehenderit nostrum placeat aut ipsa obcaecati nam adipisci qui</p>
+          <p className="lato w-30 lato txt-ce mt-2 fadeInRight trans">You may contact me through Gmail, LinkedIn or Facebook and connect with me for future collaborations</p>
           <div className="flex p-20 jc-ce al-ce mt-2 fadeInRight">
             <FontAwesomeIcon className="clr-wht fs-m hov google" icon={["fab","google"]} onClick={(elem)=>copy("google")} data-clipboard-text="sidstab20s@gmail.com"/>
             <FontAwesomeIcon className="clr-wht fs-m hov ml-10 mr-10" icon={["fab","linkedin"]} onClick={(elem)=>copy("linked")}/>
@@ -187,7 +187,7 @@ function About(props) {
               
               <div className="flex flx-col p-20 sn-ce" id="des-head">
                 <h2 className="lato bold w-100 clr-wht txt-ce">Designs</h2>
-                <p className="lato clr-wht w-100 txt-ce mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint vitae illo numquam iure a temporibus exercitationem rerum eius, cupiditate dicta! Pariatur ipsam voluptatum maiores saepe numquam, vitae voluptatem quasi.</p>
+                <p className="lato clr-wht w-100 txt-ce mt-2">These are my best design sketches and designs that were commercialized, mostly under carolyn kinder international.</p>
                 {props.filt&&
                   <div className="flex w-100 mt-5 jc-ce al-ce clr-wht trans fade">
                     <h4 className="lato clr-wht bold w-50 fadeInRight">Adjust Display</h4>
