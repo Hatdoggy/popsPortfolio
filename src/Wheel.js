@@ -162,13 +162,13 @@ export const Grid = (props)=>{
 			{props.view.img?
 				desData.map((elem,ndx)=>(
 					<div className={`${mobile?"mt-2":"fit"} cont hov`} key={ndx} >
-						<img loading="lazy" src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit hov"/>
+						<img loading="lazy" src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit img-hov trans"/>
 					</div>
 				))
 				:
 				sktData.map((elem,ndx)=>(
 					<div className={`${mobile?"mt-2":"fit"} cont hov`} key={ndx} >
-						<img loading="lazy" src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit"/>
+						<img loading="lazy" src={elem.src} alt={elem.alt} onClick={()=>show(elem)} className="fit img-hov trans"/>
 					</div>
 				))
 			}

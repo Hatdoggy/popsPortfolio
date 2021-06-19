@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Wheel,{Grid} from './Wheel'
-import func,{dispNext,adjust,change,navUpd,scroll,horScrll,disp} from './functions'
+import func,{dispNext,adjust,change,navUpd,scroll,horScrll,disp,copy} from './functions'
 import './icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -51,17 +51,17 @@ const Nav = (props)=>{
 const about = [
   {
     head:'About',
-    desc:'I am a Lorem ipsum, dolor sit amet consectetur adipisicing elit.Molestiae quaerat cumque reprehenderit nostrum placeat aut ipsa obcaecati nam adipisci qui',
+    desc:'I am a Filipino Furniture designer full of passion in innovation and designing with a 26 years of experience under three different companies',
     id:"about"
   },
   {
     head:'Work Experience',
-    desc:'I am a Lorem ipsum, dolor sit amet consectetur adipisicing elit.Molestiae quaerat cumque reprehenderit nostrum placeat aut ipsa obcaecati nam adipisci qui',
+    desc:'The following is my most recent experience: 13 years under carolyn kinder international, 4 year at Berman Industries, and 8 years at Maitland Cebu Inc.',
     id:"exp"
   },
   {
     head:'Skills',
-    desc:'I am a Lorem ipsum, dolor sit amet consectetur adipisicing elit.Molestiae quaerat cumque reprehenderit nostrum placeat aut ipsa obcaecati nam adipisci qui',
+    desc:'The following are my skills accumulated from my years of work, Free-hand sketching, prisma manual color rendering, and knowledge of the following softwares, Autocad, sketchUp, and CorelDraw',
     id:"skill"
   },
 ];
@@ -97,11 +97,11 @@ const Greet = (props)=>{
   }
 
   return(
-    <div className={`greet flex flx-col jc-ce al-e clr-wht h-vh ${check||props.mobile?"p-5 w-100":"p-20 w-50"} z-mid trans fadeInRight`} onMouseOver={props.mobile?undefined:set} id="greet">
-      <h1 className={`robo ${check?"txt-ce w-100 fade":"txt-r"} fs-head head pos-rel`}>Isidro Ondap</h1>
+    <div className={`greet flex flx-col jc-ce al-e clr-wht h-vh ${check||props.mobile?"p-5 w-100":"p-20 w-50"} z-mid fadeInRight`} onMouseOver={props.mobile?undefined:set} id="greet">
+      <h1 className={`robo ${check?"txt-ce w-100 fadeInRight":"txt-r"} fs-head head pos-rel h-70`}>Isidro Ondap</h1>
 
       {props.cur.abt&&//About display
-          <div className="mt-15 flex flx-col al-e w-100" id="abt-scrll">
+          <div className="mt-10 flex flx-col al-e jc-ar w-100 h-30" id="abt-scrll">
 
             {props.mobile?
               <div className="flex over-hide overx-flow snap scr-sm hide-bar" onScroll={horScrll}>
@@ -130,25 +130,31 @@ const Greet = (props)=>{
       }
 
       {props.cur.des&&//Designs Display
-        <div className="mt-15 flex flx-col al-e w-100 trans">
+        <div className="mt-15 flex jc-ar  flx-col al-e w-100 trans h-30">
           <h3 className="lato bold txt-r fadeInRight trans">Designs</h3>
-          <p className="lato w-75 lato txt-r mt-2 fadeInRight trans">I am a Lorem ipsum, dolor sit amet consectetur adipisicing elit.Molestiae quaerat cumque reprehenderit nostrum placeat aut ipsa obcaecati nam adipisci qui</p>
+          <p className="lato w-75 lato txt-r mt-2 fadeInRight trans">These are my best design sketches and designs that were commercialized, mostly under carolyn kinder international.</p>
           <div className="mt-5 flex jc-e w-100">
-            <button className="btn w-20 fadeInRight lato hov mr-2 skt" onClick={()=>upd('skt')}>Sketches</button>
-            <button className="btn w-20 fadeInRight lato hov img" onClick={()=>upd('img')}>Products</button>
+            <button className="btn w-20 fadeInRight lato hov mr-2 img" onClick={()=>upd('img')}>Products</button>
+            <button className="btn w-20 fadeInRight lato hov skt" onClick={()=>upd('skt')}>Sketches</button>
           </div>
         </div>
       }
 
       {check&&//Contact Display
-        <div className="mt-5 flex flx-col al-ce jc-ce w-100 trans">
+        <div className="mt-5 flex jc-ar  flx-col al-ce jc-ce w-100 trans h-30">
           <h3 className="lato bold txt-r fadeInRight trans">Contact Me</h3>
           <p className="lato w-30 lato txt-ce mt-2 fadeInRight trans">I am a Lorem ipsum, dolor sit amet consectetur adipisicing elit.Molestiae quaerat cumque reprehenderit nostrum placeat aut ipsa obcaecati nam adipisci qui</p>
-          <div className="flex p-20 jc-ce al-ce mt-2">
-            <FontAwesomeIcon className="clr-wht fs-m" icon={["fab","google"]}/>
-            <FontAwesomeIcon className="clr-wht fs-m ml-10 mr-10" icon={["fab","linkedin"]}/>
-            <FontAwesomeIcon className="clr-wht fs-m" icon={["fab","facebook"]}/>
+          <div className="flex p-20 jc-ce al-ce mt-2 fadeInRight">
+            <FontAwesomeIcon className="clr-wht fs-m hov google" icon={["fab","google"]} onClick={(elem)=>copy("google")} data-clipboard-text="sidstab20s@gmail.com"/>
+            <FontAwesomeIcon className="clr-wht fs-m hov ml-10 mr-10" icon={["fab","linkedin"]} onClick={(elem)=>copy("linked")}/>
+            <FontAwesomeIcon className="clr-wht fs-m hov" icon={["fab","facebook"]} onClick={(elem)=>copy("fb")}/>
           </div>
+
+          <div className="clr-m flex jc-ce al-ce p-10 w-50 brd-15 none" id="alert">
+            <p className="lato bold clr-wht">Copied to Clipboard!</p>
+            <FontAwesomeIcon icon="times-circle" className="ml-auto clr-wht" onClick={(elem)=>copy("google","exit")}/>
+          </div>
+
         </div>
       }
 
@@ -183,9 +189,9 @@ function About(props) {
                 <h2 className="lato bold w-100 clr-wht txt-ce">Designs</h2>
                 <p className="lato clr-wht w-100 txt-ce mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint vitae illo numquam iure a temporibus exercitationem rerum eius, cupiditate dicta! Pariatur ipsam voluptatum maiores saepe numquam, vitae voluptatem quasi.</p>
                 {props.filt&&
-                  <div className="flex w-100 mt-5 jc-ce al-ce clr-wht fade">
-                    <h4 className="lato clr-wht bold w-50">Adjust Display</h4>
-                    <div className="flex ml-auto w-50 jc-e">
+                  <div className="flex w-100 mt-5 jc-ce al-ce clr-wht trans fade">
+                    <h4 className="lato clr-wht bold w-50 fadeInRight">Adjust Display</h4>
+                    <div className="flex ml-auto w-50 jc-e fadeInRight">
                       <FontAwesomeIcon className="clr-wht mr-5" icon="align-justify" onClick={()=>disp("flx")}/>
                       <FontAwesomeIcon className="clr-wht" icon="th-large" onClick={()=>disp("grd")}/>
                     </div>
