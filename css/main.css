@@ -87,6 +87,10 @@ all: unset;
 	border-radius: 100%;
 }
 
+.brd-15{
+	border-radius: 15px;
+}
+
 .head::after{
  content: "";
  width: 30%;
@@ -97,6 +101,10 @@ all: unset;
  right: 0;
   top: calc(100% + 30px);
   transition: .5s ease-in-out;
+}
+
+.img-hov:hover{
+	opacity: .5;
 }
 
 .dispImg{

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/popsPortfolio/static/js/main.6af7d20c.chunk.js",
-    "main.js.map": "/popsPortfolio/static/js/main.6af7d20c.chunk.js.map",
+    "main.js": "/popsPortfolio/static/js/main.389ab65a.chunk.js",
+    "main.js.map": "/popsPortfolio/static/js/main.389ab65a.chunk.js.map",
     "runtime-main.js": "/popsPortfolio/static/js/runtime-main.23bc05ba.js",
     "runtime-main.js.map": "/popsPortfolio/static/js/runtime-main.23bc05ba.js.map",
-    "static/js/2.286eb97c.chunk.js": "/popsPortfolio/static/js/2.286eb97c.chunk.js",
-    "static/js/2.286eb97c.chunk.js.map": "/popsPortfolio/static/js/2.286eb97c.chunk.js.map",
+    "static/js/2.28ea4dd2.chunk.js": "/popsPortfolio/static/js/2.28ea4dd2.chunk.js",
+    "static/js/2.28ea4dd2.chunk.js.map": "/popsPortfolio/static/js/2.28ea4dd2.chunk.js.map",
     "index.html": "/popsPortfolio/index.html",
-    "static/js/2.286eb97c.chunk.js.LICENSE.txt": "/popsPortfolio/static/js/2.286eb97c.chunk.js.LICENSE.txt"
+    "static/js/2.28ea4dd2.chunk.js.LICENSE.txt": "/popsPortfolio/static/js/2.28ea4dd2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.23bc05ba.js",
-    "static/js/2.286eb97c.chunk.js",
-    "static/js/main.6af7d20c.chunk.js"
+    "static/js/2.28ea4dd2.chunk.js",
+    "static/js/main.389ab65a.chunk.js"
   ]
 }
