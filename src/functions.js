@@ -132,12 +132,14 @@ const copy = (id,exit)=>{
 	if(id === "google"){
 		new Clipboard('.google');
 		let alert = document.querySelector('#alert');
-
+		
 		if(typeof exit === "undefined"){
 			alert.style.animation = ".5s fade";
 			alert.classList.remove('none');
+			console.log("Hello")
 		}else{
 			alert.classList.add('none');
+			console.log("hi")
 		}
 
 	}else if(id === "linked"){
@@ -160,6 +162,10 @@ const MobNav = (props)=>{
             <FontAwesomeIcon className="clr-wht fs-m ml-10 mr-10" icon={["fab","linkedin"]} onClick={(elem)=>copy("linked")}/>
             <FontAwesomeIcon className="clr-wht fs-m" icon={["fab","facebook"]} onClick={(elem)=>copy("fb")}/>
           </div>
+        <div className="clr-m flex jc-ce al-ce p-10 w-50 brd-15 none" id="alert">
+           <p className="lato bold clr-wht">Copied to Clipboard!</p>
+           <FontAwesomeIcon icon="times-circle" className="ml-auto clr-wht" onClick={(elem)=>copy("google","exit")}/>
+        </div>
 		</nav>
 	)
 }
