@@ -100,12 +100,11 @@ const scroll = (val)=>{
 const horScrll = (event)=>{
 
 	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-	let bp = vw==740?708:324;
+	let bp = vw>=740?708:324;
 
 	let cont = document.querySelector('.scr-sm').scrollLeft;
 	let span = document.querySelectorAll('span');
 
-	console.log(vw);
 	span.forEach((elem)=>elem.style.backgroundColor = "white")
 
 	if(cont>bp){
@@ -130,9 +129,9 @@ const onView = (val,func)=>{
 
 const copy = (id,exit)=>{
 	if(id === "google"){
-		new Clipboard('.google');
+		let test = new Clipboard('.google');
 		let alert = document.querySelector('#alert');
-		
+		console.log(test)
 		if(typeof exit === "undefined"){
 			alert.style.animation = ".5s fade";
 			alert.classList.remove('none');
@@ -158,7 +157,7 @@ const MobNav = (props)=>{
       	<h2 className="fs-m fade robo">Contact Me</h2>
       	<p className="mt-5 lato clr-wht">Connect with me through the following links and social media platforms</p>
           <div className="flex fade p-20 jc-ce al-ce mt-2">
-            <FontAwesomeIcon className="clr-wht fs-m" icon={["fab","google"]} onClick={(elem)=>copy("google")} data-clipboard-text="sidstab20s@gmail.com"/>
+            <FontAwesomeIcon className="clr-wht fs-m google" icon={["fab","google"]} onClick={(elem)=>copy("google")} data-clipboard-text="sidstab20s@gmail.com"/>
             <FontAwesomeIcon className="clr-wht fs-m ml-10 mr-10" icon={["fab","linkedin"]} onClick={(elem)=>copy("linked")}/>
             <FontAwesomeIcon className="clr-wht fs-m" icon={["fab","facebook"]} onClick={(elem)=>copy("fb")}/>
           </div>
